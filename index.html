@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact us</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="white-pad">
+            <h1 class="heading">Contact Us</h1>
+            <form action="" method="post">
+                <div class="half-width">
+                    <label for="first-name" class="body-sm">First Name <span class="required">*</span></label>
+                    <br>
+                    <input type="text" name="first-name" id="first-name autocomplete="on" required>
+                </div>
+                <div class="half-width">
+                    <label for="last-name" class="body-sm" autocomplete="on">Last Name <span class="required">*</span></label>
+                    <br>
+                    <input type="text" name="last-name" id="last-name" required>
+                </div>
+                <div class="half-width">
+                    <label for="email" class="body-sm" autocomplete="on">Email Address <span class="required">*</span></label>
+                    <br>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="radio">
+                    <label for="Query" class="body-sm">Query Type <span class="required">*</span></label>
+                    <br>
+                    <div class="radio__button">
+                        <span class="radio__general">
+                            <input type="radio" name="type" id="general" required>
+                            <label for="general" class="body-sm">General Enquiry </label>
+                        </span>
+                        <span class="radio__support">
+                            <input type="radio" name="type" id="support" required>
+                            <label for="support" class="body-sm">Support Request </label>
+                        </span>
+                    </div>
+                </div>
+                <div class="half-width">
+                <label for="message" class="body-sm">Message <span class="required">*</span></label>
+                <br>
+                <textarea name="message" id="message" cols="66" required></textarea>
+                </div>
+                <div class="consent">
+                    <input type="checkbox" id="consent" required>
+                    <label for="consent" class="body-sm">I consent to being contacted by the team <span class="required">*</span></label>
+                </div>
+                <br>
+                <input type="submit" value="Submit" class="body-md-bold">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
